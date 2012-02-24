@@ -7,40 +7,103 @@
         <meta name="robots" content="index, follow"/>
         <meta name="author" content="Gr&eacute;gory Paul"/>
         <link rel="icon" type="image/png" href="pix/.png" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
         <style>
-            body 	{ 	}
-            a 		{	}
-            li      {   margin: .25em 0; }
-            li img	{   margin-right: .3em;	}
-            h1		{	border-bottom: 1px solid black; width: 100%; }
+            body        {   margin: 1em; }
+            h2          {   margin-top: 1em; }
+            a 	        {	text-decoration: underline; }
+            ul          {   margin: 1em 0; list-style-type: none; }
+            li          {   margin: .25em 0; }
+            li > ul     {   margin: .25em 0 1em 3em; }
+            i           {   margin-right: .5em; }
+            li img	    {   margin-right: .3em; vertical-align: text-bottom; }
+            h2		    {	border-bottom: 1px solid black; width: 98%; }
+            footer      {   clear: both; width: 100%; border-top: 1px solid black; }
+            article     {   width: 48%; }
+            #about,
+            #slides,
+            #tools      {   clear: right; float: right; }
         </style>
+        <script src="https://raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
     </head>
     <body>
-        <h1>About me</h1>
-        <ul>
-            <li><img src="http://github.com/favicon.ico" /><a href="http://github.com/paulgreg" rel="me">GitHub</a>,</li>
-            <li><img src="http://code.google.com/favicon.ico" /><a href="http://code.google.com/u/paulgreg/" rel="me">Google Code</a>,</li>
-            <li><img src="http://sf.net/favicon.ico" /><a href="http://sourceforge.net/users/paul-gregory" rel="me">SourceForge</a>,</li>
-            <li><img src="http://stackoverflow.com/favicon.ico" /><a href="http://stackoverflow.com/users/3122/paulgreg" rel="me">StackOverflow</a>,</li>
-            <li><img src="http://serverfault.com/favicon.ico" /><a href="http://serverfault.com/users/117/paulgreg" rel="me">ServerFault</a>,</li>
-            <li><img src="http://superuser.com/favicon.ico" /><a href="http://superuser.com/users/755/paulgreg" rel="me">SuperUser</a>,</li>
-            <li><img src="http://linkedin.com/favicon.ico" /><a href="http://fr.linkedin.com/in/paulgreg" rel="me">linkedIn</a>,</li> 
-            <li><img src="http://twitter.com/favicon.ico" /><a href="https://twitter.com/paulgreg" rel="me">twitter</a>,</li> 
-            <li><img src="http://mail.google.com/mail/u/0/images/favicon.ico" />paulgreg at gmail.</li>
-        </ul>
-        <h1>Présentations en français</h1>
-        <ul>
-            <li><img src="http://javascript.training.free.fr/valtechdays/imgs/favicon.ico" /><a href="http://javascript.training.free.fr/valtechdays/">Présentation HTML5 aux ValtechDays 2011</a>,</li>
-            <li><img src="http://javascript.training.free.fr/couchdb/full/pix/favicon.ico" /><a href="http://javascript.training.free.fr/couchdb/full/training-couchdb.html">CouchDB</a>,</li>
-            <li><img src="http://javascript.training.free.fr/couchdb/intro/pix/favicon.ico" /><a href="http://javascript.training.free.fr/couchdb/intro/intro-couchdb.html">CouchDB (courte introduction)</a>,</li>
-            <li><img src="http://javascript.training.free.fr/html5/favicon.png" /><a href="http://javascript.training.free.fr/html5/">HTML5</a>,</li>
-            <li><img src="http://javascript.training.free.fr/AppEngine/imgs/shorten-url.png" /><a href="http://javascript.training.free.fr/AppEngine/appengine.html">AppEngine</a>,</li>
-            <li><img src="http://javascript.training.free.fr/javascript/pix/page_white_code_red.png" /><a href="http://javascript.training.free.fr/javascript/">JavaScript</a>,</li>
-            <li><img src="http://javascript.training.free.fr/jetpack/favicon.ico" /><a href="http://javascript.training.free.fr/jetpack/">Jetpack</a> (deprecated).</li>
-        </ul>
-        <h1>Tools</h1>
-        <ul>
-            <li><img src="http://javascript.training.free.fr/uniquepasswordbuilder/lock.png" /><a href="http://javascript.training.free.fr/uniquepasswordbuilder/bookmarklet.html">Unique Password Builder Bookmarklet</a></li>
-        </ul>
+        <h1>Grégory PAUL’s portfolio</h1>
+        <article id="slides">
+            <h2>Présentations en français</h2>
+            <ul>
+                <li>2011 : <img src="http://javascript.training.free.fr/valtechdays/imgs/favicon.ico" /><a href="http://javascript.training.free.fr/valtechdays/">Présentation &quot;Le Web a-t-il besoin de HTML5 ?&quot; aux ValtechDays</a>,</li>
+                <li>2011 : <img src="http://javascript.training.free.fr/AppEngine/imgs/shorten-url.png" /><a href="http://javascript.training.free.fr/AppEngine/appengine.html">AppEngine</a>,</li>
+                <li>2010 : <img src="http://javascript.training.free.fr/couchdb/full/pix/favicon.ico" /><a href="http://javascript.training.free.fr/couchdb/full/training-couchdb.html">CouchDB</a> (<a href="http://javascript.training.free.fr/couchdb/intro/intro-couchdb.html">verstion courte</a>),</li>
+                <li>2010 : <img src="http://javascript.training.free.fr/html5/favicon.png" /><a href="http://javascript.training.free.fr/html5/">HTML5</a>,</li>
+                <li>2010 : <img src="http://javascript.training.free.fr/jetpack/favicon.ico" /><a href="http://javascript.training.free.fr/jetpack/">Jetpack</a> (obsolète),</li>
+                <li>2009 : <img src="http://javascript.training.free.fr/javascript/pix/page_white_code_red.png" /><a href="http://javascript.training.free.fr/javascript/">JavaScript</a>.</li>
+            </ul>
+        </article>
+        <article id="tools">
+            <h2>Tools</h2>
+            <ul>
+                <li><img src="http://rsstodolist.appspot.com/favicon.png" /><a href="http://rsstodolist.appspot.com/">RSS todo list</a> : URL oriented to-read-list based on an RSS XML feed hosted on Google AppEngine,</li>
+                <li><img src="http://build-status.appspot.com/imgs/favicon-fail.png" /><a href="http://build-status.appspot.com/">Build Status</a> : simple build wall hosted on Google AppEngine,</li>
+                <li><img src="http://javascript.training.free.fr/uniquepasswordbuilder/lock.png" /><a href="http://javascript.training.free.fr/uniquepasswordbuilder/bookmarklet.html">Unique Password Builder</a> : bookmarklet to generate a different strong password for each site,</li>
+                <li><i class="icon-calendar"></i><a href="http://timeboxes.sourceforge.net/">TimeBoxes</a> : to plan activities and check if you’re running late.</li>
+            </ul>
+        </article>
+        <article id="about">
+            <h2>About me</h2>
+            <ul>
+                <li><i class="icon-envelope"></i>email me at &quot;me&quot; at gpaul.me,</li>
+                <li><img src="http://twitter.com/favicon.ico" /><a href="https://twitter.com/paulgreg" rel="me">@paulgreg</a>,</li> 
+                <li><img src="http://linkedin.com/favicon.ico" /><a href="http://fr.linkedin.com/in/paulgreg" rel="me">linkedIn</a>,</li> 
+                <li><img src="http://stackoverflow.com/favicon.ico" /><a href="http://stackoverflow.com/users/3122/paulgreg" rel="me">StackOverflow</a>,</li>
+                <li><img src="http://serverfault.com/favicon.ico" /><a href="http://serverfault.com/users/117/paulgreg" rel="me">ServerFault</a>,</li>
+                <li><img src="http://superuser.com/favicon.ico" /><a href="http://superuser.com/users/755/paulgreg" rel="me">SuperUser</a>.</li>
+            </ul>
+        </article>
+        <article id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><img src="http://github.com/favicon.ico" /><a href="http://github.com/paulgreg" rel="me">GitHub.com/ValtechTechno</a>
+                    <ul>
+                        <li><i class="icon-star"></i><a href="https://github.com/ValtechTechno/cours-du-soir-http">Cours du soir HTTP</a>,</li>
+                        <li><i class="icon-star"></i><a href="https://github.com/ValtechTechno/ValtechDays-2011-Le-Web-a-t-il-besoin-de-HTML5">Le Web a-t-il besoin de HTML5 ?</a>,</li>
+                        <li><i class="icon-star"></i><a href="https://github.com/ValtechTechno/cours-du-soir-nodejs">Cours du soir nodejs</a>,</li>
+                        <li><i class="icon-star"></i><a href="https://github.com/ValtechTechno/cours-du-soir-gae">Cours du soir Google AppEngine</a>,</li>
+                        <li>&nbsp;&amp; <a href="https://github.com/ValtechTechno/cours-du-soir-gae-python-urlshortener">example sources : URL shortener</a>.</li>
+                    </ul
+                </li>
+                <li><img src="http://github.com/favicon.ico" /><a href="http://github.com/paulgreg" rel="me">GitHub.com/paulgreg</a>
+                    <ul>
+                        <li><i class="icon-star"></i><a href="https://github.com/paulgreg/training-couchdb">Présentation CouchDB</a>,</li>
+                        <li><i class="icon-star"></i><a href="https://github.com/paulgreg/training-html5">Présentation HTML5</a>.</li>
+                    </ul
+                </li>
+                <li><img src="http://code.google.com/favicon.ico" /><a href="http://code.google.com/u/paulgreg/" rel="me">Google Code</a>
+                    <ul>
+                        <li><i class="icon-star"></i><a href="http://code.google.com/p/rsstodolist/">RSS todo list</a>,</li>
+                        <li><i class="icon-star"></i><a href="http://code.google.com/p/build-status/">build-status</a> &amp; <a href="http://code.google.com/p/buildstatusnotifier/">notifier</a>,</li>
+                        <li><i class="icon-star"></i><a href="http://code.google.com/p/uniquepasswordbuilder/">Unique Password Builder</a>.</li>
+                    </ul
+                </li>
+                <li><img src="http://sf.net/favicon.ico" /><a href="http://sourceforge.net/users/paul-gregory" rel="me">SourceForge</a>
+                    <ul>
+                        <li><i class="icon-star"></i><a href="http://sourceforge.net/projects/timeboxes/">TimeBoxes</a>,</li>
+                        <li><i class="icon-star"></i><a href="http://sourceforge.net/projects/anothertodolist/">Another Todo List</a> (<a href="http://anothertodolist.sourceforge.net/">demo</a>),</li>
+                        <li><i class="icon-star"></i><a href=http://sourceforge.net/projects/gcontact/"">GContact</a>,</li>
+                        <li><i class="icon-star"></i><a href="http://sourceforge.net/projects/getthecolor/">GetTheColor</a>.</li>
+                    </ul
+                </li>
+            </ul>
+        </article>
+        <article id="podcasts">
+            <h2>Podcasts</h2>
+            <ul>
+                <li><img src="http://blog.valtech.fr/favicon.ico" />
+                    <a href="http://blog.valtech.fr/wordpress/2011/12/15/">TDD</a>,
+                    <a href="http://blog.valtech.fr/wordpress/2012/01/15/">iOS</a>,
+                    <a href="http://blog.valtech.fr/wordpress/2012/02/15/">Cloud Computing</a>.
+                </li>
+            </ul>
+        </article>
+        <footer>&nbsp;</footer>
     </body>
 </html>
