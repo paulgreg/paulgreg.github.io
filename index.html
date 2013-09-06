@@ -20,7 +20,8 @@
             li img	    {   margin-right: .3em; vertical-align: text-bottom; width: 16px; height: 16px; }
             footer      {   clear: both; width: 100%; border-top: 1px solid black; }
             article     {   width: 48%; }
-            #about, #slides, #tools  {   clear: right; float: right; }
+            #about li span              { display: none; unicode-bidi:bidi-override; direction: rtl; }
+            #about, #slides, #tools     {   clear: right; float: right; }
         </style>
         <script src="prefixfree.min.js"></script>
     </head>
@@ -54,7 +55,8 @@
         <article id="about">
             <h2>About me</h2>
             <ul>
-                    <li><img src="imgs/twitter.png" alt="" /><a href="https://twitter.com/paulgreg" rel="me">@paulgreg</a>, <img src="http://linkedin.com/favicon.ico" alt="" /><a href="http://fr.linkedin.com/in/paulgreg" rel="me">linkedIn</a>,</li>
+                <li><i class="icon-envelope"></i><span>@em</span> (you can download my PGP public key from <a href="http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x82F595F5EB23BDBD"><acronym title="Massachusetts Institute of Technology">MIT</acronym> server</a> or <a href="gpg-keys/public-key-EB23BDBD.asc">from here</a>),</li>
+                <li><img src="imgs/twitter.png" alt="" /><a href="https://twitter.com/paulgreg" rel="me">@paulgreg</a>, <img src="http://linkedin.com/favicon.ico" alt="" /><a href="http://fr.linkedin.com/in/paulgreg" rel="me">linkedIn</a>,</li>
                     <li><img src="imgs/stackoverflow.png" alt="" /><a href="http://stackoverflow.com/users/3122/paulgreg" rel="me">StackOverflow</a>, <img src="imgs/serverfault.png" alt="" /><a href="http://serverfault.com/users/117/paulgreg" rel="me">ServerFault</a>, <img src="imgs/superuser.png" alt="" /><a href="http://superuser.com/users/755/paulgreg" rel="me">SuperUser</a>, <img src="imgs/rootme.png" alt="" /><a href="http://www.root-me.org/lovecraft?inc=score&amp;lang=fr" rel="me">RootMe</a>, </li>
                 <li><img src="imgs/calendar.png" alt="" />Conferences I will attend : 
                     next <a href="http://www.dotjs.fr/">dotJS</a>
@@ -147,17 +149,12 @@
             </ul>
         </article>
         <footer>&nbsp;</footer>
-        <script type="text/javascript">
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-35692163-1']);
-            _gaq.push(['_trackPageview']);
-
-            (function() {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-             })();
+        <script>
+            // Construct email (by offuscating it a lot to avoid spam)
+            var d = window.location.hostname;
+            var el = document.querySelector('#about li span');
+            el.innerHTML = d.split('').reverse().join('') + el.innerHTML;
+            el.style.display = 'inline';
         </script>
   </body>
 </html>
