@@ -1,0 +1,3 @@
+Contact: me@paulgreg.me
+Encryption: http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x82F595F5EB23BDBD
+Preferred-Languages: en,fr
