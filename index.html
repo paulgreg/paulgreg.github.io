@@ -12,17 +12,19 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <style>
             [class^="icon-"], [class*=" icon-"] { background-image: url("imgs/glyphicons-halflings.png"); }
-            body            { margin: 1em; }
+            body            { margin: 1em; font-size: 1.1em; line-height: 1.4em; }
             h1              { margin-right: 100px; }
             h2              { border-bottom: 1px solid black; width: 98%; margin-top: 1em; }
-            h3              { font-size: 14px; font-weight: normal; }
+            h3              { font-size: 1.2em; font-weight: normal; }
+            h4              { font-size: 1.1em; font-style: italic; font-weight: normal; color: #333; margin-left: 1.5em; margin-top: .5em; }
+            h4 a            { color: #333; }
             #photo          { position: absolute; top: .5em; right: .75em; border: 1px solid grey; width: 100px; }
             a               { text-decoration: underline; }
             ul              { margin: 1em 0; list-style-type: none; }
-            li              { margin: .25em 0; }
-            li > ul         { margin: .25em 0 1em 3em; }
-            i               { margin-right: .5em; }
-            li img          { margin-right: .3em; vertical-align: text-bottom; width: 16px; height: 16px; }
+            li              { margin: .5em 0; line-height: 1.4em; }
+            li > ul         { margin: .5em 0 1em 3em; }
+            i               { margin-right: .3em; }
+            li img          { margin-right: .3em; vertical-align: middle; width: 16px; height: 16px; }
             footer          { clear: both; width: 100%; border-top: 1px solid black; }
             #about li span  { display: none; unicode-bidi:bidi-override; direction: rtl; }
             @media (min-width:1024px) {
@@ -34,6 +36,85 @@
     <body>
         <img src="imgs/me.jpg" id="photo" alt="Me" />
         <h1>Grégory PAUL’s portfolio</h1>
+        <section>
+            <article id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><h3><img src="imgs/github.png" alt="" /><a rel="me nofollow noopener" href="https://github.com/paulgreg">GitHub.com/paulgreg</a></h3>
+                        <ul>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/UniquePasswordBuilder">UniquePasswordBuilder</a> : a per site strong password generator using scrypt or argon2,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/semi-persistent-chat">semi-persistent-chat</a> : a simple chat in React where messages are kept several hours,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/timezones">TimeZones</a> : a simple React app to display time zones,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/scratchpad">Scratchpad</a> : a simple <abbr title="Progessive Web App">PWA</abbr> to take notes,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/thermomix-recipes">Thermomix recipes</a> (<a rel="nofollow noopener" href="http://thermomix.recipes.free.fr/">demo</a>),</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/Books">Books</a> : a simple <abbr title="Progessive Web App">PWA</abbr> in React to read books written in <a rel="nofollow noopener" href="https://fr.wikipedia.org/wiki/Markdown">Markdown</a>,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/brainjs-playing-breakout">brainjs-playing-breakout</a> : Using a neural network (<a rel="nofollow noopener" href="https://github.com/BrainJS/brain.js">brain.js</a>) to play a breakout game,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-node-server">rsstodolist-node-server</a> : a <a rel="nofollow noopener" href="https://nodejs.org/">nodejs</a> port of <a rel="nofollow noopener" href="https://rsstodolist.appspot.com">rsstodolist.appspot.com</a>,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-server">rsstodolist-server</a> : a <a rel="nofollow noopener" href="https://www.djangoproject.com/">django</a> port of <a rel="nofollow noopener" href="https://rsstodolist.appspot.com">rsstodolist.appspot.com</a>,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-react-native">rsstodolist-react-native</a> : Android/iOS rsstodolist app built with <a rel="nofollow noopener" href="https://facebook.github.io/react-native/">react native</a>,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-addon">rsstodolist-addon</a> : rsstodolist Firefox and Chrome extension.</li>
+                        </ul>
+                    </li>
+                    <li><h3><img src="imgs/mappy.png" alt="" /><a rel="nofollow noopener" href="https://github.com/mappy">GitHub.com/Mappy</a></h3>
+                        <ul>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/Mappy/Leaflet-active-area">Leaflet-active-area</a> : Contributions to that Leaflet plugin,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/mappy/mobilelock">MobileLock</a> : A device rental manager, built during a hackaton at <a rel="nofollow noopener" href="http://fr.mappy.com">Mappy</a>.</li>
+                        </ul>
+                    </li>
+                    <li><h3><img src="imgs/hackaday.ico" alt=""><a rel="me nofollow noopener" href="https://hackaday.io/paulgreg">Hackaday.io/paulgreg</a></h3>
+                        <h4><a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/ESP8266">esp8266</a> / <a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/ESP32">esp32</a></h4>
+                        <ul>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/175627-eco2-humidity-temperature-sensor">eCO2 sensor</a> : a CO2 sensor to know when to let fresh air in (helpful during COVID-19 episode),</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/171910-esp32-weather-station">Weather Station</a> : a esp32 weather station with an e-ink screen and <a rel="nofollow noopener" href="https://hackaday.io/project/175441-iot-tft-weather-station">an esp8266 variant using a TFT screen</a>,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/169420-another-city-clock">Another City Clock</a> : a binary clock,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/167071-ma-im-home">Ma, I’m home</a> : a connected button sending SMS when pressed
+                                - <img src="imgs/youtube.png" alt="" /><a rel="nofollow noopener" href="https://www.youtube.com/watch?v=YSLezdGY_Ck" title="Ma, I’m home demo">video</a>,
+                            </li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/11696-internet-smart-reset-plug">Internet smart plug</a> : a connected power plug.</li>
+                        </ul>
+                        <h4><a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/Arduino">Arduino</a></h4>
+                        <ul>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/27988-another-small-robot">A small robot</a> controlled by an Arduino and an ultrasonic module
+                                - <img src="imgs/youtube.png" alt="" /><a rel="nofollow noopener" href="https://www.youtube.com/watch?v=L54DlrarAUU" title="A small robot demo">video</a>,
+                            </li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/6156-roomba-pilot">Roomba Pilot</a> : piloting a Roomba using an Arduino
+                                - <img src="imgs/youtube.png" alt="" /><a rel="nofollow noopener" href="https://www.youtube.com/watch?v=7rpqySur7gI" title="Roomba pilot demo">video</a>,
+                            </li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/6158-a-home-made-mp3oggflac-player">Arduino MP3 player</a> : a mp3/ogg player based on an Arduino Micro,
+                                contribution to <a rel="nofollow noopener" href="https://github.com/paulgreg/Adafruit_VS1053_Library">Adafruit_VS1053_Library</a>
+                                - <img src="imgs/youtube.png" alt="" /><a rel="nofollow noopener" href="https://www.youtube.com/watch?v=GQP0tIAjIE0" title="Arduino MP3 player demo">video</a>.
+                            </li>
+                        </ul>
+                        <h4>Retro Gaming</h4>
+                        <ul>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/11697-retropie-arcade-bartop">Retropie Arcade Bartop</a> : retrogaming arcade bartops built with a Pi 3,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/9537-retropie-portable-gaming-device">Retropie Portable Gaming Device</a> : a handheld retrogaming device built with a Pi Zero
+                                - <img src="imgs/youtube.png" alt="" /><a rel="nofollow noopener" href="https://www.youtube.com/watch?v=tLGrY2pNGNo" title="Retropie portable gaming device demo">video</a>,
+                            </li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/21687-another-retropie-portable-gaming-device">Another Retropie Portable Gaming Device</a> : a bigger handheld retrogaming device.</li>
+                        </ul>
+                        <h4>Computing</h4>
+                        <ul>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/167041-grandma-password-manager-helper">Grandma password manager helper</a> : a <a rel="nofollow noopener" href="http://digistump.com/products/1">Digispark</a> acting as a keyboard to help <a rel="noopener" href="https://paulgreg.me/UniquePasswordBuilder/">UniquePasswordBuilder</a> use,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/14984-another-rc2014-build">RC2014 build</a> : a DIY Z80 based computer kit,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/20177-building-a-mechanical-keyboard">A Mechanical keyboard</a> based on a satan GH60 board.</li>
+                        </ul>
+                        <h4>Raspberry Pi</h4>
+                        <ul>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/6336-raspberry-tor-box">Raspberry Pi Tor Box</a> : a Tor access point built with a Pi,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/10338-pi-mitm">Raspberry Pi MITM</a> : a MITM access point built with a Pi.</li>
+                        </ul>
+                    <li><h3><img src="imgs/sf.png" alt="" /><a rel="me nofollow noopener" href="https://sourceforge.net/users/paul-gregory">SourceForge</a></h3>
+                        <ul>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://sourceforge.net/projects/timeboxes/">TimeBoxes</a>,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://sourceforge.net/projects/anothertodolist/">Another Todo List</a> (<a rel="nofollow noopener" href="http://anothertodolist.sourceforge.net/">demo</a>),</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://sourceforge.net/projects/gcontact/">GContact</a>,</li>
+                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://sourceforge.net/projects/getthecolor/">GetTheColor</a>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
         <section>
             <article id="tools">
                 <h2>Tools</h2>
@@ -47,41 +128,65 @@
                     <li><i class="icon-calendar"></i><a rel="noopener" href="http://timeboxes.sourceforge.net/">TimeBoxes</a> : to plan activities and check if you’re running late.</li>
                 </ul>
             </article>
-            <article id="addons">
-                <h2>Browsers addons</h2>
+            <article id="extensions">
+                <h2>Browsers extensions</h2>
                 <ul>
-                    <li><img src="imgs/uniquePasswordBuilder.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/UniquePasswordBuilder/">UniquePasswordBuilder</a> addons for <a rel="nofollow noopener" href="https://addons.mozilla.org/en-US/firefox/addon/uniquepasswordbuilder-addon/">Firefox</a> and <a rel="nofollow noopener" href="https://chrome.google.com/webstore/detail/uniquepasswordbuider/egilgkfibealmbllcigihfhglhipnmie">Chome</a>,</li>
-                    <li><img src="imgs/rsstodolist.png" alt="" /><a rel="nofollow noopener" href="https://rsstodolist.appspot.com/">rsstodolist</a> addons for <a rel="nofollow noopener" href="https://addons.mozilla.org/fr/firefox/addon/rsstodolist/">Firefox</a> and <a rel="nofollow noopener" href="https://chrome.google.com/webstore/detail/rsstodolist-extension/gjnfedompndjcoeannmcppbckbkjhpkd">Chrome</a>.
+                    <li><img src="imgs/uniquePasswordBuilder.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/UniquePasswordBuilder/">UniquePasswordBuilder</a> extension for <a rel="nofollow noopener" href="https://extensions.mozilla.org/en-US/firefox/addon/uniquepasswordbuilder-addon/">Firefox</a> and <a rel="nofollow noopener" href="https://chrome.google.com/webstore/detail/uniquepasswordbuider/egilgkfibealmbllcigihfhglhipnmie">Chome</a>,</li>
+                    <li><img src="imgs/rsstodolist.png" alt="" /><a rel="nofollow noopener" href="https://rsstodolist.appspot.com/">rsstodolist</a> extension for <a rel="nofollow noopener" href="https://extensions.mozilla.org/fr/firefox/addon/rsstodolist/">Firefox</a> and <a rel="nofollow noopener" href="https://chrome.google.com/webstore/detail/rsstodolist-extension/gjnfedompndjcoeannmcppbckbkjhpkd">Chrome</a>.
                 </ul>
             </article>
             <article id="slides">
                 <h2>Présentations en français</h2>
                 <ul>
-                    <li>2016 : <img src="imgs/devoxx.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/https-slides/" title="Slides">HTTPS n’aura plus de secret pour vous</a> (<a rel="nofollow noopener" href="https://www.youtube.com/watch?v=NCPgs4YlijU">vidéo à Devoxx</a>),</li>
-                    <li>2014 : <img src="imgs/html5.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/webcomponents-slides/" title="Slides">Web Components</a>,</li>
-                    <li>2014 : <img src="imgs/devoxx.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/bitcoin-cryptocurrencies/">Bitcoin et monnaies cryptographiques</a> (<a rel="nofollow noopener" href="https://www.youtube.com/watch?v=MCYgIr9NntY&list=PLklQqdqnBkPgWjGxCLSgsw7leKI-HDkM3&index=17" title="Video sur Parleys">vidéo à Devoxx</a>, <a rel="nofollow noopener" href="https://www.youtube.com/watch?v=zD8hSN0Ttrs">vidéo chez CloudTemple</a>),</li>
-                    <li>2013 : <img src="imgs/devoxx.png" alt="" /><a rel="nofollow noopener" href="https://valtechtechno.github.io/devoxx-2013-tests-pourquoi-comment/slides/">Les Tests : Pourquoi, Comment ?</a> (<a rel="nofollow noopener" href="https://www.youtube.com/watch?v=46Caz6SofEw" title="Video">vidéo à Devoxx</a>),</li>
-                    <li>2013 : <i class="icon-user"></i><a rel="nofollow noopener" href="https://paulgreg.me/casperjs-ghost-tour">CasperJS</a> (forké depuis le dépôt d’<a rel="nofollow noopener" href="https://github.com/athieriot/casperjs-ghost-tour">Aurélien Thieriot</a>),</li>
-                    <li>2012 : <img src="imgs/link.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/cours-du-soir-http/">HTTP</a>,</li>
-                    <li>2011 : <img src="imgs/page_white_code_red.png" alt="" /><a rel="nofollow noopener" href="https://valtechtechno.github.com/cours-du-soir-nodejs/slides/">nodejs</a>,
-                    <li>2011 : <img src="imgs/valtech.png" alt="" /><a rel="nofollow noopener" href="https://valtechtechno.github.io/ValtechDays-2011-Le-Web-a-t-il-besoin-de-HTML5/slides/">Le Web a-t-il besoin de HTML5 ?</a> aux ValtechDays,</li>
-                    <li>2011 : <img src="imgs/link.png" alt="" /><a rel="nofollow noopener" href="https://valtechtechno.github.io/cours-du-soir-gae/">AppEngine</a>,</li>
-                    <li>2010 : <img src="imgs/couchdb.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/training-couchdb/full">CouchDB</a> (<a rel="nofollow noopener" href="https://paulgreg.me/training-couchdb/intro">verstion courte</a>),</li>
-                    <li>2010 : <img src="imgs/html5.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/training-html5">HTML5</a>,</li>
-                    <li>2010 : <img src="imgs/jetpack.png" alt="" /><a rel="nofollow noopener" href="http://javascript.training.free.fr/jetpack/">Jetpack</a> (obsolète),</li>
+                    <li>2016 : <img src="imgs/devoxx.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/https-slides/" title="Slides">HTTPS n’aura plus de secret pour vous</a>
+                        - <img src="imgs/youtube.png" alt="" /><a rel="nofollow noopener" href="https://www.youtube.com/watch?v=NCPgs4YlijU" title="HTTPS n’aura plus de secret pour vous à Devoxx">Devoxx</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/https-slides">code source</a></small>,
+                    </li>
+                    <li>2014 : <img src="imgs/html5.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/webcomponents-slides/" title="Slides">Web Components</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/webcomponent-mappy">code source du composant</a> & <a rel="nofollow noopener" href="https://github.com/paulgreg/webcomponents-slides">code source</a></small>,
+                    </li>
+                    <li>2014 : <img src="imgs/devoxx.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/bitcoin-cryptocurrencies/">Bitcoin et monnaies cryptographiques</a>
+                        - <img src="imgs/youtube.png" alt="" /><a rel="nofollow noopener" href="https://www.youtube.com/watch?v=MCYgIr9NntY&list=PLklQqdqnBkPgWjGxCLSgsw7leKI-HDkM3&index=17" title="Bitcoin et monnaies cryptographiques à Devoxx">Devoxx</a>, <a rel="nofollow noopener" href="https://www.youtube.com/watch?v=zD8hSN0Ttrs" title="Bitcoin et monnaies cryptographiques chez CloudTemple">CloudTemple</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/bitcoin-cryptocurrencies">code source</a></small>,
+                    </li>
+                    <li>2013 : <img src="imgs/devoxx.png" alt="" /><a rel="nofollow noopener" href="https://valtechtechno.github.io/devoxx-2013-tests-pourquoi-comment/slides/">Les Tests : Pourquoi, Comment ?</a>
+                        - <img src="imgs/youtube.png" alt="" /><a rel="nofollow noopener" href="https://www.youtube.com/watch?v=46Caz6SofEw" title="Les Tests : Pourquoi, Comment ? à Devoxx">Devoxx</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/devoxx-2013-tests-pourquoi-comment">code source</a></small>,
+                    </li>
+                    <li>2012 : <img src="imgs/link.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/cours-du-soir-http/">HTTP</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/cours-du-soir-http">code source</a></small>,
+                    </li>
+                    <li>2011 : <img src="imgs/page_white_code_red.png" alt="" /><a rel="nofollow noopener" href="https://valtechtechno.github.com/cours-du-soir-nodejs/slides/">nodejs</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/cours-du-soir-nodejs">code source</a></small>,
+                    </li>
+                    <li>2011 : <img src="imgs/valtech.png" alt="" /><a rel="nofollow noopener" href="https://valtechtechno.github.io/ValtechDays-2011-Le-Web-a-t-il-besoin-de-HTML5/slides/">Le Web a-t-il besoin de HTML5 ?</a> aux ValtechDays
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/ValtechDays-2011-Le-Web-a-t-il-besoin-de-HTML5">code source</a></small>,
+                    </li>
+                    <li>2011 : <img src="imgs/link.png" alt="" /><a rel="nofollow noopener" href="https://valtechtechno.github.io/cours-du-soir-gae/">AppEngine</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/ValtechTechno/cours-du-soir-gae-python-urlshortener">code de l’exemple (url shortener)</a> & <a rel="nofollow noopener" href="https://github.com/paulgreg/cours-du-soir-gae">code source</a></small>,
+                    </li>
+                    <li>2010 : <img src="imgs/couchdb.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/training-couchdb/full">CouchDB</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/training-couchdb">code source</a></small>,
+                    </li>
+                    <li>2010 : <img src="imgs/html5.png" alt="" /><a rel="nofollow noopener" href="https://paulgreg.me/training-html5">HTML5</a>
+                        - <img src="imgs/github.png" alt="" /><small><a rel="nofollow noopener" href="https://github.com/paulgreg/training-html5">code source</a></small>,
+                    </li>
                     <li>2009 : <img src="imgs/page_white_code_red.png" alt="" /><a rel="nofollow noopener" href="http://javascript.training.free.fr/javascript/">JavaScript</a>.</li>
                 </ul>
             </article>
             <article id="blog">
                 <h2>Blog</h2>
                 <ul>
-                    <li><i class="icon-pencil"></i>Ma collaboration sur les articles du <a rel="nofollow noopener" href="https://blog.mappy.com/tag/technique/">blog technique de Mappy</a> et mes articles sur le <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/author/gpaul/">blog technique de valtech</a>.
+                    <li><i class="icon-pencil"></i>Participation aux articles du <a rel="nofollow noopener" href="https://blog.mappy.com/tag/technique/">blog technique de Mappy</a>,</li>
+                    <li><i class="icon-pencil"></i>Articles sur l’ex-<a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/author/gpaul/">blog technique de valtech</a>
+                        avec ce <a rel="nofollow noopener" href="https://web.archive.org/web/20141028214429/http://blog.valtech.fr/2012/08/07/bien-demarrer-son-projet-web-avec-backbone-et-jasmine/">tutoriel Backbone/Jasmine</a>
+                        <small>(<a rel="nofollow noopener" href="https://github.com/ValtechTechno/backbone-jasmine-demo">code source</a>)</small>.</li>
                 </ul>
             </article>
             <article id="podcasts">
                 <h2>Podcasts</h2>
                 <ul>
-                    <li><img src="imgs/valtech.png" alt="" />
+                    <li><img src="imgs/valtech.png" alt="" />Fréquence Valtech :
                         <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/2011/12/15/">TDD</a>,
                         <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/2012/01/15/">iOS</a>,
                         <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/2012/02/15/">Cloud Computing</a>,
@@ -89,10 +194,9 @@
                         <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/2012/04/15/">HTML5, CSS3 &amp; API JavaScript</a>,
                         <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/2012/06/15/">Azure</a>,
                         <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/2012/09/04/">Kanban</a>,
-                        <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/2012/12/26/">DevOps</a>.
+                        <a rel="nofollow noopener" href="https://web.archive.org/web/20160405042121/http://blog.valtech.fr/2012/12/26/">DevOps</a>,
                     </li>
-                    <li><i class="icon-headphones"></i>Épisode sur <a rel="nofollow noopener" href="http://unetassedethepodcast.com/2013/07/07/the-6-gregory-paul-yeoman-grunt-bower/">Yeoman, Grunt et Bower</a> sur <a rel="nofollow noopener" href="http://unetassedethepodcast.com/" title="Le podcast d’Éric Lefèvre-Ardant">une tasse de thé podcast</a>,</li>
-                    <li><i class="icon-headphones"></i>Contributions techniques à <a rel="nofollow noopener" href="http://aviapod.fr/">aviapod.fr</a>.</li>
+                    <li><i class="icon-headphones"></i>Épisode sur <a rel="nofollow noopener" href="https://web.archive.org/web/20161110171941/http://unetassedethepodcast.com/2013/07/07/the-6-gregory-paul-yeoman-grunt-bower/">Yeoman, Grunt et Bower</a> et contributions techniques à <a rel="nofollow noopener" href="https://web.archive.org/web/20190122145815/https://www.aviapod.fr/">aviapod.fr</a>.</li>
                 </ul>
             </article>
             <article id="about">
@@ -102,7 +206,7 @@
                     <li>
                         <img src="imgs/twitter.png" alt="" /><a rel="me nofollow noopener" href="https://twitter.com/paulgreg">@paulgreg</a>,
                         <i class="icon-asterisk"></i><a rel="me nofollow noopener" href="http://www.brownbaglunch.fr/baggers.html#gregory-paul">Bagger</a>,
-                        <img src="imgs/youtube.png" alt="" /><a rel="me nofollow noopener" href="https://www.youtube.com/channel/UCpy_csuRKr7z8n42aw2vDpQ">youtube videos of stuff I built</a>,
+                        <img src="imgs/youtube.png" alt="" /><a rel="me nofollow noopener" href="https://www.youtube.com/channel/UCpy_csuRKr7z8n42aw2vDpQ">Youtube</a>,
                         <i class="icon-asterisk"></i><a rel="me nofollow noopener" href="http://ouiaremakers.com/users/9284">Ouiaremakers</a>,
                         <img src="imgs/linkedin.ico" alt="" /><a rel="me nofollow noopener" href="https://fr.linkedin.com/in/paulgreg">linkedIn</a>,
                     </li>
@@ -129,13 +233,13 @@
                             <a rel="nofollow noopener" href="https://www.nuitduhack.com/">Nuit du hack</a>,
                             <a rel="nofollow noopener" href="http://www.devoxx.fr/2015/index.html">Devoxx Paris</a> ;
                         <b>2014</b> :
-                            <a rel="nofollow noopener" href="http://lanyrd.com/2014/devoxxfr/">Devoxx Paris</a> (<a rel="nofollow noopener" href="https://www.youtube.com/watch?v=MCYgIr9NntY&index=17&list=PLklQqdqnBkPgWjGxCLSgsw7leKI-HDkM3" title="Video sur Parleys">speaker</a>),
+                            <a rel="nofollow noopener" href="http://lanyrd.com/2014/devoxxfr/">Devoxx Paris</a> (<a rel="nofollow noopener" href="https://www.youtube.com/watch?v=MCYgIr9NntY&index=17&list=PLklQqdqnBkPgWjGxCLSgsw7leKI-HDkM3">speaker</a>),
                             <a rel="nofollow noopener" href="https://www.nuitduhack.com/">Nuit du hack</a>,
                             <a rel="nofollow noopener" href="https://fosdem.org/2014">Fosdem</a> ;
                         <b>2013</b> :
                             <a rel="nofollow noopener" href="https://www.dotjs.io/">dotJS</a>,
                             <a rel="nofollow noopener" href="https://www.nuitduhack.com/">Nuit du hack</a>,
-                            <a rel="nofollow noopener" href="https://web.archive.org/web/20150618105827/http://www.devoxx.com/display/FR13/Home">Devoxx Paris</a> (<a rel="nofollow noopener" href="https://www.youtube.com/watch?v=46Caz6SofEw" title="Video sur Parleys">speaker</a>),
+                            <a rel="nofollow noopener" href="https://web.archive.org/web/20150618105827/http://www.devoxx.com/display/FR13/Home">Devoxx Paris</a> (<a rel="nofollow noopener" href="https://www.youtube.com/watch?v=46Caz6SofEw">speaker</a>),
                             <a rel="nofollow noopener" href="https://fosdem.org/2013">Fosdem</a> ;
                         <b>2012</b> :
                             <a rel="nofollow noopener" href="http://www.devoxx.fr/">Devoxx Paris</a>,
@@ -156,86 +260,6 @@
                             <a rel="nofollow noopener" href="http://www.usievents.com/">Université du SI</a> ;
                         <b>2006</b> :
                             <a rel="nofollow noopener" href="http://www.eclipsecon.org/2006">EclipseCon</a>.
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section>
-            <article id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li><h3><img src="imgs/github.png" alt="" /><a rel="me nofollow noopener" href="https://github.com/paulgreg">GitHub.com/paulgreg</a></h3>
-                        <ul>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/semi-persistent-chat">semi-persistent-chat</a> : a simple chat in React where messages are kept several hours,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/Books">Books</a> : a simple <abbr title="Progessive Web App">PWA</abbr> in React to read books written in <a rel="nofollow noopener" href="https://fr.wikipedia.org/wiki/Markdown">Markdown</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/scratchpad">Scratchpad</a> : a simple <abbr title="Progessive Web App">PWA</abbr> to take notes,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/brainjs-playing-breakout">brainjs-playing-breakout</a> : Using a neural network (<a rel="nofollow noopener" href="https://github.com/BrainJS/brain.js">brain.js</a>) to play a breakout game,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/timezones">TimeZones</a> : a simple React app to display time zones,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/https-slides">https-slides</a> : slides on HTTPS presentation,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/caldav-sms-notifier">CalDAV-SMS-Notifier</a> : a SMS notification tool for next events in CalDAV calendars,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/Adafruit_VS1053_Library">Adafruit_VS1053_Library</a> : contribution to Adafruit VS1053 Codec Breakout library,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/arduino-dice">Arduino-dice</a> : an electronic dice based on an Arduino Uno,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/UniquePasswordBuilder">UniquePasswordBuilder</a> : a per site strong password generator using scrypt,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/webcomponent-mappy">webcomponent-mappy</a> : a Mappy Web Component,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/webcomponents-slides">webcomponents-slides</a> : slides on Web Components,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/bitcoin-cryptocurrencies">bitcoin-cryptocurrencies</a> : slides on Bitcoin and other cryptocurrencies,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-node-server">rsstodolist-node-server</a> : a <a rel="nofollow noopener" href="https://nodejs.org/">nodejs</a> port of <a rel="nofollow noopener" href="https://rsstodolist.appspot.com">rsstodolist.appspot.com</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-server">rsstodolist-server</a> : a <a rel="nofollow noopener" href="https://www.djangoproject.com/">django</a> port of <a rel="nofollow noopener" href="https://rsstodolist.appspot.com">rsstodolist.appspot.com</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-react-native">rsstodolist-react-native</a> : Android/iOS rsstodolist app built with <a rel="nofollow noopener" href="https://facebook.github.io/react-native/">react native</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-native">rsstodolist-native</a> : Android/iOS rsstodolist app built with <a rel="nofollow noopener" href="https://www.nativescript.org">nativescript</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-addon">rsstodolist-addon</a> : rsstodolist Firefox and Chrome Add-on,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/rsstodolist-legacy/">rsstodolist-legacy</a> : the source code behind <a rel="nofollow noopener" href="https://rsstodolist.appspot.com/">rsstodolist.appspot.com</a> app,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/thermomix-recipes">Thermomix recipes</a> (<a rel="nofollow noopener" href="http://thermomix.recipes.free.fr/">demo</a>),</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/simple-monitoring">Simple Monitoring</a> : a simple node monitoring tool,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/build-status/">build-status</a> : a build status app &amp; its Hudson/TeamCity <a rel="nofollow noopener" href="https://github.com/paulgreg/buildstatusnotifier/">notifier</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/cours-du-soir-http">Cours du soir HTTP</a> : slides about HTTP,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/casperjs-ghost-tour">CasperJS Ghost Tour</a> : CasperJS slides,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/training-couchdb">Présentation CouchDB</a> : CouchDB slides,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/paulgreg/training-html5">Présentation HTML5</a> : HTML5/css3 slides.</li>
-                        </ul>
-                    </li>
-                    <li><h3><img src="imgs/mappy.png" alt="" /><a rel="nofollow noopener" href="https://github.com/mappy">GitHub.com/Mappy</a></h3>
-                        <ul>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/Mappy/Leaflet-active-area">Leaflet-active-area</a> : Contributions to that Leaflet plugin,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/mappy/mobilelock">MobileLock</a> : A device rental manager, built during a hackaton at <a rel="nofollow noopener" href="http://fr.mappy.com">Mappy</a>.</li>
-                        </ul>
-                    </li>
-                    <li><h3><img src="imgs/valtech.png" alt="" /><a rel="nofollow noopener" href="https://github.com/valtechtechno">GitHub.com/ValtechTechno</a></h3>
-                        <ul>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/ValtechTechno/devoxx-2013-tests-pourquoi-comment">Présentation : Les Tests, Pourquoi, Comment ?</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/ValtechTechno/backbone-jasmine-demo">Tutoriel Backbone/Jasmine</a> et l’<a rel="nofollow noopener" href="https://web.archive.org/web/20141028214429/http://blog.valtech.fr/2012/08/07/bien-demarrer-son-projet-web-avec-backbone-et-jasmine/">article de blog</a> associé,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/ValtechTechno/ValtechDays-2011-Le-Web-a-t-il-besoin-de-HTML5">Le Web a-t-il besoin de HTML5 ?</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/ValtechTechno/cours-du-soir-nodejs">Cours du soir nodejs</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://github.com/ValtechTechno/cours-du-soir-gae">Cours du soir Google AppEngine</a>,</li>
-                            <li>&nbsp;&amp; <a rel="nofollow noopener" href="https://github.com/ValtechTechno/cours-du-soir-gae-python-urlshortener">sources de l’exemple : URL shortener</a>.</li>
-                        </ul>
-                    </li>
-                    <li><h3><img src="imgs/hackaday.ico" alt=""><a rel="me nofollow noopener" href="https://hackaday.io/paulgreg">Hackaday.io/paulgreg</a></h3>
-                        <ul>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/175627-eco2-humidity-temperature-sensor">eCO2 sensor</a> : a CO2 sensor based on an <a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a>, to know when to let fresh air in (helpful during COVID-19 episode),</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/171910-esp32-weather-station">Weather Station</a> : a weather station based on an <a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/ESP32">ESP32</a> and an e-ink screen and <a rel="nofollow noopener" href="https://hackaday.io/project/175441-iot-tft-weather-station">a variant using an esp8266 with TFT screen</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/169420-another-city-clock">Another City Clock</a> : an <a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a> based binary clock,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/167071-ma-im-home">Ma, I’m home</a> : a connected button sending SMS when pressed, based on an <a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/167041-grandma-password-manager-helper">Grandma password manager helper</a> : a <a rel="nofollow noopener" href="http://digistump.com/products/1">Digispark</a> acting as a keyboard to help <a rel="noopener" href="https://paulgreg.me/UniquePasswordBuilder/">UniquePasswordBuilder</a> use,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/14984-another-rc2014-build">RC2014 build</a> : a DIY Z80 based computer kit,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/20177-building-a-mechanical-keyboard">A Mechanical keyboard</a> based on a satan GH60 board,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/27988-another-small-robot">A small robot</a> controlled by an Arduino and an ultrasonic module,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/11697-retropie-arcade-bartop">Retropie Arcade Bartop</a> : retrogaming arcade bartops built with a Pi 3,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/9537-retropie-portable-gaming-device">Retropie Portable Gaming Device</a> : a handheld retrogaming device built with a Pi Zero,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/21687-another-retropie-portable-gaming-device">Another Retropie Portable Gaming Device</a> : a bigger handheld retrogaming device,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/6156-roomba-pilot">Roomba Pilot</a> : piloting a Roomba using an Arduino,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/6158-a-home-made-mp3oggflac-player">Arduino MP3 player</a> : a mp3/ogg player based on an Arduino Micro,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/6336-raspberry-tor-box">Raspberry Pi Tor Box</a> : a Tor access point built with a Pi,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/10338-pi-mitm">Raspberry Pi MITM</a> : a MITM access point built with a Pi,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://hackaday.io/project/11696-internet-smart-reset-plug">Internet smart plug</a> : a power plug controlled by a <a rel="nofollow noopener" href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a>.</li>
-                        </ul>
-                    <li><h3><img src="imgs/sf.png" alt="" /><a rel="me nofollow noopener" href="https://sourceforge.net/users/paul-gregory">SourceForge</a></h3>
-                        <ul>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://sourceforge.net/projects/timeboxes/">TimeBoxes</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://sourceforge.net/projects/anothertodolist/">Another Todo List</a> (<a rel="nofollow noopener" href="http://anothertodolist.sourceforge.net/">demo</a>),</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://sourceforge.net/projects/gcontact/">GContact</a>,</li>
-                            <li><i class="icon-star"></i><a rel="nofollow noopener" href="https://sourceforge.net/projects/getthecolor/">GetTheColor</a>.</li>
-                        </ul>
                     </li>
                 </ul>
             </article>
