@@ -1,0 +1,3 @@
+Contact: me@paulgreg.me
+Encryption: https://paulgreg.me/gpg-keys/paulgreg-0x1577E28BFC97FF24-public.asc
+Preferred-Languages: fr,en
