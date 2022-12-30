@@ -1,0 +1,197 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 1em;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+a,
+a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #015080;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 9px 25px;
+  list-style: disc;
+}
+
+li {
+  line-height: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  margin: 30px 100px auto auto;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  width: 98%;
+  margin-top: 1em;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 27px;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: normal;
+  color: #333;
+  margin: 0.8em 0.5em 0.5em 0.5em;
+  line-height: 18px;
+}
+
+h4 a {
+  color: #333;
+}
+
+h4 span.emoji {
+  font-style: normal;
+}
+
+abbr {
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ddd;
+  cursor: help;
+}
+
+#photo {
+  position: absolute;
+  top: 0.5em;
+  right: 0.75em;
+  border: 1px solid grey;
+  width: 100px;
+}
+
+ul {
+  margin: 1em 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0.5em 0;
+  line-height: 1.5em;
+}
+
+li>ul {
+  margin: 0.5em 0 1.1em 1.5em;
+}
+
+i {
+  margin-right: 0.3em;
+}
+
+li.star:before {
+  content: "★";
+  margin-right: 0.25em;
+}
+
+li img,
+img.small {
+  margin-right: 0.3em;
+  max-width: 22px;
+  max-height: 22px;
+  vertical-align: sub;
+}
+
+img.french {
+  max-width: 24px;
+  max-height: 24px;
+  margin-right: 0.25em;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+#about li span {
+  display: none;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+@media (min-width: 1024px) {
+  div {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #292929;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #DCDCDC;
+  }
+
+  a,
+  a:hover {
+    color: #8DB2E5;
+  }
+
+  a:visited {
+    color: darkgrey;
+  }
+
+  img {
+    filter: grayscale(20%);
+  }
+}
