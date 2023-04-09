@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  color-scheme: light dark;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   background-color: #fff;
