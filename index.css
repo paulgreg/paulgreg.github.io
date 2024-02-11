@@ -122,7 +122,7 @@ li {
   line-height: 1.5em;
 }
 
-li>ul {
+li > ul {
   margin: 0.5em 0 1.1em 1.5em;
 }
 
@@ -169,7 +169,6 @@ footer {
   }
 }
 
-
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #292929;
@@ -180,21 +179,26 @@ footer {
   h2,
   h3,
   h4 {
-    color: #DCDCDC;
+    color: #dcdcdc;
   }
 
   a,
   a:hover,
   h4 a,
   h4 a:hover {
-    color: #8DB2E5;
+    color: #8db2e5;
+  }
+
+  h2,
+  footer {
+    border-color: #ddd;
   }
 
   a:visited {
     color: darkgrey;
   }
 
-  img {
-    filter: grayscale(20%);
+  img.invert {
+    filter: invert(0.8);
   }
 }
