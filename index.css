@@ -37,12 +37,18 @@ a:active {
 
 ul {
   padding: 0;
-  margin: 0 0 9px 25px;
+  margin: 1em 0;
   list-style: disc;
+  list-style-type: none;
 }
 
 li {
-  line-height: 18px;
+  margin: 0.5em 0;
+  line-height: 1.5em;
+}
+
+li > ul {
+  margin: 0.5em 0 1.1em 1.5em;
 }
 
 img {
@@ -106,24 +112,19 @@ abbr {
 
 #photo {
   position: absolute;
-  top: 0.5em;
-  right: 0.75em;
+  top: 10px;
+  right: 14px;
   border: 1px solid grey;
   width: 100px;
 }
 
-ul {
-  margin: 1em 0;
-  list-style-type: none;
-}
-
-li {
-  margin: 0.5em 0;
-  line-height: 1.5em;
-}
-
-li > ul {
-  margin: 0.5em 0 1.1em 1.5em;
+#buyfromeu {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 128px;
+  border: 1px solid grey;
+  width: 100px;
 }
 
 i {
@@ -166,6 +167,12 @@ footer {
     width: 49%;
     display: inline-block;
     vertical-align: top;
+  }
+}
+
+@media (min-width: 620px) {
+  #buyfromeu {
+    display: block;
   }
 }
 
